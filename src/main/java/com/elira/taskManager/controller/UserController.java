@@ -27,7 +27,7 @@ public class UserController {
         return userService.findAll();
     }
 
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<?> createUser(
             @Valid @RequestBody User user,
             BindingResult result
